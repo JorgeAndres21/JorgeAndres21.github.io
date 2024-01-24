@@ -115,7 +115,14 @@ button .material-symbols-outlined {
     justify-content: space-around;
 }
 #header .left > span img {
-    width: 1em;
+    width: 1.5em;
+}
+#header .left > span {
+    margin-top: 5px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
 }
 #header h3 {
     color: #9e9e9e;
@@ -362,6 +369,9 @@ button .material-symbols-outlined {
     #header .right {
         padding-left: 4vw;
     }
+    #textChange1 .case {
+        width: 50%;
+    }
     #textChange3 .card {
         height: 15vh;
     }
@@ -372,11 +382,34 @@ button .material-symbols-outlined {
 }
 @media screen and (max-width:580px) {
     main {
+        height: 100vh;
+        top: 50px;
+
+        grid-template-columns: 2fr;
+        grid-template-rows: 2fr 2fr 1fr;
         width: 90vw;
-        grid-template-rows: 1fr 3fr 1fr;
+        gap: 1%;
         grid-template-areas: "header"
                              "section"
                              "article";
+    }
+    #header {
+        flex-direction: column;
+    }
+    #header .left{
+        padding-left: 4vw;
+    }
+    #header .right::before {
+        height: 2px;
+        width: 90%;
+        right: 15px;
+        top: -20px;
+    }
+    button .material-symbols-outlined {
+        font-size: 2em;
+    }
+    #textChange1 .case {
+        width: 70%;
     }
     #textChange3 .card {
         width: 28vw;
