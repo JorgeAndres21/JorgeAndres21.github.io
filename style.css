@@ -114,6 +114,9 @@ button .material-symbols-outlined {
     flex-direction: row;
     justify-content: space-around;
 }
+#header .left > span img {
+    width: 1em;
+}
 #header h3 {
     color: #9e9e9e;
 }
@@ -328,6 +331,9 @@ button .material-symbols-outlined {
         box-shadow: none;
         border: none;
     }
+    #header .right {
+        padding-left: 6vw;
+    }
     #article {
         flex-direction: row;
     }
@@ -352,6 +358,9 @@ button .material-symbols-outlined {
 @media screen and (max-width:770px) {
     body {
         font-size: 10px;
+    }
+    #header .right {
+        padding-left: 4vw;
     }
     #textChange3 .card {
         height: 15vh;
