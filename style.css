@@ -284,8 +284,8 @@ button .material-symbols-outlined {
     gap: 2em;
 }
 #textChange3 .card {
-    width: 16vw;
-    height: 16vh;
+    width: 18em;
+    height: 12em;
 
     background-color: #f0f0f0;
     border: 1px solid #292929;
@@ -304,7 +304,7 @@ button .material-symbols-outlined {
     transition: transform ease 1s;
 }
 #textChange3 img:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .hidden {
@@ -357,9 +357,12 @@ button .material-symbols-outlined {
         width: 25%;
         height: 65%;
     }
+    #textChange3 > div {
+        row-gap: 4em;
+    }
     #textChange3 .card {
-        width: 20vw;
-        height: 18vh;
+        width: 18em;
+        height: 12em;
     }
 }
 @media screen and (max-width:770px) {
@@ -372,9 +375,6 @@ button .material-symbols-outlined {
     #textChange1 .case {
         width: 50%;
     }
-    #textChange3 .card {
-        height: 15vh;
-    }
     button {
         height: 50%;
         padding-bottom: 2px;
@@ -386,8 +386,8 @@ button .material-symbols-outlined {
         top: 50px;
 
         grid-template-columns: 2fr;
-        grid-template-rows: 2fr 2fr 1fr;
-        width: 90vw;
+        grid-template-rows: 1fr 2fr 1fr;
+        width: 95vw;
         gap: 1%;
         grid-template-areas: "header"
                              "section"
@@ -395,6 +395,7 @@ button .material-symbols-outlined {
     }
     #header {
         flex-direction: column;
+        justify-content: space-evenly;
     }
     #header .left{
         padding-left: 4vw;
@@ -411,8 +412,11 @@ button .material-symbols-outlined {
     #textChange1 .case {
         width: 70%;
     }
+    #textChange3 > div {
+        row-gap: 5em;
+    }
     #textChange3 .card {
-        width: 28vw;
+        width: 15em;
     }
 
 }
